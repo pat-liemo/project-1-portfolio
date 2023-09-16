@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(./images/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 80%;
+}
+
+/* Navbar Styling */
+#navbar {
+    padding: 20px 40px 20px 40px;
+    width: 96%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkred;
+    position: fixed;
+    top: 0; 
+}
+
+#navbar a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+#navbar a:hover{
+    cursor: pointer;
+    color: lightslategray;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h3 {
+    color: white;
+}
+
+/* Landing page Styling */
+#landPage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 300px;  
+}
+
+#landPage p {
+    display: flex;
+    flex-direction: column;
+}
+
+#intro {
+    line-height: 50px;
+}
+
+#binaryCode {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+#binaryCode::after{
+    content: "01010000 01100001 01110100|";
+}
+
+#binaryCode:hover::after {
+    content: "Pat|";
+}
+
+.socials a {
+    padding: 20px;
+}
+
+.socials a:hover {
+    cursor: pointer;
+}
+
+.socials i:hover {
+    color: red;
+    transform: scale(3);
+}
+
+hr {
+    border: 2px solid rgb(66, 87, 87);
+}
+
+/* About page Styling */
+.aboutPage {
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 120vh;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 25px;
+
+}
+
+.aboutPage .text {
+    text-align: center;
+    width: 700px;
+    line-height: 40px;
+    font-size: medium;
+}
+
+.text p {
+    color: lightslategray;
+}
+
+.text h1 {
+    color: red;
+}
+
+.text h2 {
+    color: red;
+}
+
+.text h3 {
+    color: red;
+}
+
+.text span {
+    color: white
+}
+
+.text i {
+    color: red;
+}
+
+.about1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about1 img {
+    height: 430px;
+    width: 100%;
+} 
+
+.about2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about2 div {
+    height: 40vh;
+    width: 40vh;
+    background-color: white;
+}
+
+/* Services page Styling */
+.servicesPage {
+    height: 70vh;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.servicesPage div {
+    height: 65vh;
+    width: 20%;
+    padding: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.servicesPage div:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.servicesPage h3 {
+    color: red;
+}
+
+.servicesPage p {
+    color: lightslategray;
+    line-height: 40px;
+}
+
+.projects {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.projects div {
+    height: 40vh;
+    width: 15%;
+}
+
+.projects img {
+    height: 40vh;
+    width: 100%;
+}
+
+.projects h1 {
+    color: rgb(240, 233, 233);
+}
+
+.projects a:hover {
+    background-color: rgb(240, 233, 233);
+}
+
+/* Resume page Styling - shares some styles with 'About' page */
+.resumePage {
+    margin: 40px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 185vh;
+    /* width: 1650px; */
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: auto;
+}
+
+.resumePage .text {
+    text-align: left;
+    width: 700px;
+    line-height: 40px;
+    font-size: medium;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: darkred;
+    height: 100px;
+}
+
+.footer img {
+    width: 80px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: last baseline;
+    padding: 200px 20px 40px 20px;
+    margin-bottom: 0px;
+    line-height: 30px;
+}
+
+.footerSocials a {
+    padding: 20px 50px 20px 50px;
+}
+
+.footerSocials i {
+    color: rgb(180, 174, 174);
+    height: 10px;
+    width: 10px;
+}
+
+.footerSocials i:hover {
+    transform: scale(2);
+}
+
+.footerSocials a:hover {
+    cursor: pointer;
+}
+
+.footer p {
+    color: rgb(180, 174, 174);
+}
+
+.icon {
+    opacity: 0.2;
+    height: 60vh;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .pat {
+    color: black;
+}
+
